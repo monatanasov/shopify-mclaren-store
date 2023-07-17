@@ -25,5 +25,22 @@
   </div>
 
 
+  <div class="header__menu">
+
+    <div class="header__menu--main-menu">
+      <div class="header__menu-ham">
+        {% render 'icon-ham-menu' %}
+      </div>
+
+      <div class="header__menu--menu-links">
+        <!-- Main menu -->
+        {% for link in linklists.main-menu.links -%}
+          {{ link.title | link_to: link.url }}
+        {%- endfor %}
+      </div>
+    </div>
+
+  </div>
+
 
 </div>
