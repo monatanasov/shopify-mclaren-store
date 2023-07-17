@@ -2,8 +2,33 @@
 
 :root {
     --papaya-orange: #f1892a;
+    --clr-white: #ffffff;
 }
 
 .header__annbar {
     background-color: var(--papaya-orange);
+    color: var(--clr-white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 8px 20px;
+}
+
+.header__annbar--middle-col {
+    grid-column: 2 / 2;
+}
+
+.header__annbar--right-col {
+    grid-column: 3 / 3;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__annbar--login,
+.header__annbar--cart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
 }

@@ -2,23 +2,26 @@
 
 
   <div class="header__annbar">
-    <p>🚚 FREE DELIVERY OVER $90</p>
-
-    <div class="header__login">
-      {% render 'flag-uk' %}
-      {% render 'icon-login' %}
-      <p>LOGIN</p>
+    <div class="header__annbar--middle-col">
+      <p>🚚 FREE DELIVERY OVER $90</p>
     </div>
 
-    <div class="header__cart-wrapper">
-      <div class="header__cart">
-        {% render 'icon-cart' %}
+    <div class="header__annbar--right-col">
+      <div class="header__annbar--login">
+        {% render 'flag-uk' %}
+        {% render 'icon-login' %}
+        <p>LOGIN</p>
       </div>
-      <div class="header__cart-count">
-        <span>0</span>
+
+      <div class="header__annbar--cart-wrapper">
+        <div class="header__annbar--cart">
+          {% render 'icon-cart' %}
+        </div>
+        <div class="header__annbar--cart-count">
+          <span>0</span>
+        </div>
       </div>
     </div>
-
   </div>
 
 
