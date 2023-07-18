@@ -12,6 +12,13 @@
         {{ link.title | link_to: link.url }}
       {%- endfor %}
     </div>
+    <div class="ham-menu__footer-links">
+      <!-- Footer menu inside ham-menu -->
+      {% for link in linklists.footer.links -%}
+        {{ link.title | link_to: link.url }}
+      {%- endfor %}
+    </div>
+
   </div>
 
   <div class="header__annbar">

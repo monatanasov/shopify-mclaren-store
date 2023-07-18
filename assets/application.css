@@ -108,7 +108,7 @@ body {
     width: 38%;
     height: 100vh;
     background-color: var(--papaya-orange);
-    padding: 2rem 2rem;
+    padding: 3rem 3rem;
 }
 
 .close-ham-icon {
@@ -116,9 +116,32 @@ body {
     width: 2rem;
     height: 2rem;
     overflow: hidden;
+    margin-bottom: 3rem;
 }
 
 .ham-menu__menu-links {
     display: flex;
     flex-direction: column;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid black;
+}
+
+.ham-menu__menu-links a {
+    text-decoration: none;
+    color: var(--clr-black);
+    font-size: 4.375rem;
+    line-height: 1;
+    font-family: Space Grotesk,sans-serif;;
+}
+
+.ham-menu__footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 1rem;
+}
+
+.ham-menu__footer-links a {
+    text-decoration: none;
+    color: var(--clr-black);
 }
