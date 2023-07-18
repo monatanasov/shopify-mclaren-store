@@ -1,6 +1,19 @@
 <div class="header">
 
 
+  <div class="ham-menu">
+
+    <div class="close-ham-icon">
+      {% render 'icon-ham-menu-close' %}
+    </div>
+    <div class="ham-menu__menu-links">
+      <!-- Main menu inside ham-menu -->
+      {% for link in linklists.main-menu.links -%}
+        {{ link.title | link_to: link.url }}
+      {%- endfor %}
+    </div>
+  </div>
+
   <div class="header__annbar">
     <div class="header__annbar--middle-col">
       <p>🚚 free delivery over $90</p>

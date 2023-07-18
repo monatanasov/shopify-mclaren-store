@@ -9,6 +9,7 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
+    position: relative;
 }
 
                                                                                         /* header announcement bar section  */
@@ -96,4 +97,28 @@ body {
     background-color: var(--clr-white);
     padding: 2rem 1rem 2rem 11rem;
     clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+
+
+.ham-menu {
+    position: absolute;
+    z-index: 50;
+    width: 38%;
+    height: 100vh;
+    background-color: var(--papaya-orange);
+    padding: 2rem 2rem;
+}
+
+.close-ham-icon {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.ham-menu__menu-links {
+    display: flex;
+    flex-direction: column;
 }
