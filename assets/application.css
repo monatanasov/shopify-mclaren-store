@@ -11,6 +11,8 @@ body {
     font-weight: 700;
 }
 
+                                                                                        /* header announcement bar section  */
+
 .header__annbar {
     background-color: var(--papaya-orange);
     color: var(--clr-white);
@@ -46,17 +48,12 @@ body {
     gap: .5rem;
 }
 
-
-
-
-
-
+                                                                                        /* header menu section  */
 
 .header__menu {
     background-color: var(--clr-black);
     display: flex;
     justify-content: space-between;
-
 }
 
 .header__menu--main-menu {
@@ -89,12 +86,10 @@ body {
     color: var(--clr-white);
     text-decoration: none;
     border-bottom: 2px solid transparent;
-
 }
 
 .header__menu--menu-links a:hover {
     border-bottom: 2px solid var(--papaya-orange);
-
 }
 
 .header__menu-logo {
