@@ -3,7 +3,7 @@
 
   <div class="ham-menu">
 
-    <div class="close-ham-icon">
+    <div class="ham-menu__close-ham-icon">
       {% render 'icon-ham-menu-close' %}
     </div>
     <div class="ham-menu__menu-links">
@@ -15,6 +15,10 @@
     <div class="ham-menu__footer-links">
       <!-- Footer menu inside ham-menu -->
       {% for link in linklists.footer.links -%}
+        {{ link.title | link_to: link.url }}
+      {%- endfor %}
+
+      {% for link in linklists.footer-second-menu.links limit: 2 -%}
         {{ link.title | link_to: link.url }}
       {%- endfor %}
     </div>

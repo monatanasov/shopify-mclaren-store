@@ -106,17 +106,16 @@ body {
     position: absolute;
     z-index: 50;
     width: 38%;
-    height: 100vh;
     background-color: var(--papaya-orange);
-    padding: 3rem 3rem;
+    padding: 3rem 2.5rem;
 }
 
-.close-ham-icon {
+.ham-menu__close-ham-icon {
     cursor: pointer;
     width: 2rem;
     height: 2rem;
     overflow: hidden;
-    margin-bottom: 3rem;
+    margin-bottom: 2.25rem;
 }
 
 .ham-menu__menu-links {
@@ -131,7 +130,12 @@ body {
     color: var(--clr-black);
     font-size: 4.375rem;
     line-height: 1;
-    font-family: Space Grotesk,sans-serif;;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.ham-menu__menu-links a:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px black;
 }
 
 .ham-menu__footer-links {
@@ -139,6 +143,7 @@ body {
     flex-direction: column;
     gap: 6px;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 
 .ham-menu__footer-links a {
