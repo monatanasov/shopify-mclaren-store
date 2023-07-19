@@ -20,6 +20,11 @@
     background-color: var(--papaya-orange);
 }
 
+.btn--x-close {
+    /* border: none;
+    background-color: #ffffff; */
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
@@ -66,7 +71,8 @@ p {
 }
 
 .header__annbar--login,
-.header__annbar--cart-wrapper {
+.header__annbar--cart-wrapper,
+.header__annbar--cart-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,4 +246,17 @@ p {
 .ham-menu__footer-links a {
     text-decoration: none;
     color: var(--clr-black);
+}
+
+                                                                                        /* cart menu section  */
+
+.cart-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    width: 28%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 3rem 2.5rem;
 }
