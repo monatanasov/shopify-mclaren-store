@@ -7,8 +7,16 @@
     </div>
 
     <div class="header__annbar--right-col">
+      <div class="header__annbar--flag-wrapper" x-data="{ flagMenuOpen: false }">
+        <div class="header__annbar--flag" x-on:click="flagMenuOpen = true">
+          {% render 'icon-flag-uk' %}
+        </div>
+        <div class="header__annbar--flag-menu">
+          {% render 'flag-menu' %}
+        </div>
+      </div>
+
       <div class="header__annbar--login">
-        {% render 'flag-uk' %}
         {% render 'icon-login' %}
         <p>LOGIN</p>
       </div>
