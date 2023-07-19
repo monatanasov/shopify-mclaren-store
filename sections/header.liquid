@@ -1,9 +1,6 @@
-<div class="header">
-
-
-  <div class="ham-menu">
-
-    <div class="ham-menu__close-ham-icon">
+<div class="header" x-data="{ hamMenuOpen: false }">
+  <div class="ham-menu" x-show="hamMenuOpen">
+    <div class="ham-menu__close-ham-icon" x-on:click="hamMenuOpen = false">
       {% render 'icon-ham-menu-close' %}
     </div>
     <div class="ham-menu__menu-links">
@@ -52,7 +49,7 @@
   <div class="header__menu">
 
     <div class="header__menu--main-menu">
-      <div class="header__menu-ham">
+      <div class="header__menu-ham" x-on:click="hamMenuOpen = true">
         {% render 'icon-ham-menu' %}
       </div>
 
