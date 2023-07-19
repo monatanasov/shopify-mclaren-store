@@ -1,25 +1,25 @@
 <div class="header" x-data="{ hamMenuOpen: false }">
-  <div class="ham-menu" x-show="hamMenuOpen">
-    <div class="ham-menu__close-ham-icon" x-on:click="hamMenuOpen = false">
-      {% render 'icon-ham-menu-close' %}
+  <div class="opacity-black-bg" x-show="hamMenuOpen">
+    <div class="ham-menu">
+      <div class="ham-menu__close-ham-icon" x-on:click="hamMenuOpen = false">
+        {% render 'icon-ham-menu-close' %}
+      </div>
+      <div class="ham-menu__menu-links">
+        <!-- Main menu inside ham-menu -->
+        {% for link in linklists.main-menu.links -%}
+          {{ link.title | link_to: link.url }}
+        {%- endfor %}
+      </div>
+      <div class="ham-menu__footer-links">
+        <!-- Footer menu inside ham-menu -->
+        {% for link in linklists.footer.links -%}
+          {{ link.title | link_to: link.url }}
+        {%- endfor %}
+        {% for link in linklists.footer-second-menu.links limit: 2 -%}
+          {{ link.title | link_to: link.url }}
+        {%- endfor %}
+      </div>
     </div>
-    <div class="ham-menu__menu-links">
-      <!-- Main menu inside ham-menu -->
-      {% for link in linklists.main-menu.links -%}
-        {{ link.title | link_to: link.url }}
-      {%- endfor %}
-    </div>
-    <div class="ham-menu__footer-links">
-      <!-- Footer menu inside ham-menu -->
-      {% for link in linklists.footer.links -%}
-        {{ link.title | link_to: link.url }}
-      {%- endfor %}
-
-      {% for link in linklists.footer-second-menu.links limit: 2 -%}
-        {{ link.title | link_to: link.url }}
-      {%- endfor %}
-    </div>
-
   </div>
 
   <div class="header__annbar">
