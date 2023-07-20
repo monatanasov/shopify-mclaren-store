@@ -283,8 +283,43 @@ p {
 .cart-menu__header-xclose {
     font-size: 1rem;
     font-weight: normal;
+    cursor: pointer;
 }
 
 .cart-menu__total-items {
     font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.cart-menu__footer {
+    margin-top: 1.25rem;
+    padding: 0.625rem;
+    gap: 0.625rem;
+    background-color: var(--papaya-orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-menu__footer-title {
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.625rem;
+}
+
+.cart-menu__footer-btn {
+    padding: .75rem;
+    min-width: 10rem;
+    background-color: var(--clr-white);
+    border: none;
+}
+
+.cart-menu__footer-btn:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-black);
 }
