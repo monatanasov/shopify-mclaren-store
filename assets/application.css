@@ -97,11 +97,13 @@ p {
 }
 
 .flag-menu__box-icon-close {
-    max-width: 1rem;
-    max-height: 1rem;
+    max-width: 2rem;
+    max-height: 2rem;
     position: absolute;
     top: 1rem;
     left: 1rem;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .flag-menu__box-title h2 {
