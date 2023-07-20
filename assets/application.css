@@ -20,15 +20,11 @@
     background-color: var(--papaya-orange);
 }
 
-.btn--x-close {
-    /* border: none;
-    background-color: #ffffff; */
-}
-
 body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     position: relative;
+    color: black;
 }
 
 h2 {
@@ -49,7 +45,6 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 8px 20px;
-    text-transform: uppercase;
     font-size: 14px;
 }
 
@@ -58,6 +53,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+}
+
+.header__annbar > .header__annbar--middle-col p,
+.header__annbar--login-btn {
+    color: #ffffff;
 }
 
 .header__annbar--right-col {
@@ -83,8 +84,9 @@ p {
     align-items: center;
     gap: .5rem;
     cursor: pointer;
+    color: var(--clr-white);
 }
-
+                                                                                        /* header flag bar section  */
 .header__annbar--flag {
     cursor: pointer;
 }
@@ -130,6 +132,7 @@ p {
     font-weight: normal;
     text-transform: none;
     font-size: 1rem;
+    color: black;
 }
 
 .flag-menu__box-content select {
@@ -266,4 +269,22 @@ p {
     height: 100vh;
     background-color: #ffffff;
     padding: 3rem 2.5rem;
+}
+
+.cart-menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+}
+
+.cart-menu__header-xclose {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.cart-menu__total-items {
+    font-size: 1.25rem;
 }

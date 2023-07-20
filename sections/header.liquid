@@ -1,11 +1,11 @@
 <div class="header" x-data="{ hamMenuOpen: false }">
   <!-- rendering hamburger menu when opened -->
   {% render 'ham-menu' %}
+
   <div class="header__annbar">
     <div class="header__annbar--middle-col">
       <p>🚚 free delivery over $90</p>
     </div>
-
     <div class="header__annbar--right-col">
       <div class="header__annbar--flag-wrapper" x-data="{ flagMenuOpen: false }">
         <div class="header__annbar--flag" x-on:click="flagMenuOpen = true">
@@ -15,12 +15,11 @@
           {% render 'flag-menu' %}
         </div>
       </div>
-
       <div class="header__annbar--login">
         {% render 'icon-login' %}
-        <p>LOGIN</p>
+        <p class="header__annbar--login-btn">LOGIN</p>
       </div>
-      <div class="header__annbar--cart-wrapper" x-data="{ cartMenuOpen: false }">
+      <div x-data="{ cartMenuOpen: false }">
         <div class="header__annbar--cart-menu" x-on:click="cartMenuOpen = true">
           <div class="header__annbar--cart">
             {% render 'icon-cart' %}
@@ -34,14 +33,11 @@
     </div>
   </div>
 
-
   <div class="header__menu">
-
     <div class="header__menu--main-menu">
       <div class="header__menu-ham" x-on:click="hamMenuOpen = true">
         {% render 'icon-ham-menu-open' %}
       </div>
-
       <div class="header__menu--menu-links">
         <!-- Main menu -->
         {% for link in linklists.main-menu.links -%}
@@ -49,12 +45,8 @@
         {%- endfor %}
       </div>
     </div>
-
     <div class="header__menu-logo">
       {% render 'mclaren-logo' %}
     </div>
-
   </div>
-
-
 </div>
