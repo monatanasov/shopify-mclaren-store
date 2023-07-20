@@ -20,10 +20,8 @@
         {% render 'icon-login' %}
         <p>LOGIN</p>
       </div>
-
       <div class="header__annbar--cart-wrapper" x-data="{ cartMenuOpen: false }">
         <div class="header__annbar--cart-menu" x-on:click="cartMenuOpen = true">
-          {% render 'cart-menu' %}
           <div class="header__annbar--cart">
             {% render 'icon-cart' %}
           </div>
@@ -31,6 +29,7 @@
             <span>0</span>
           </div>
         </div>
+        {% render 'cart-menu' %}
       </div>
     </div>
   </div>

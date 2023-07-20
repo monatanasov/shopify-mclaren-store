@@ -70,8 +70,13 @@ p {
     font-weight: 700;
 }
 
+.header__annbar--cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header__annbar--login,
-.header__annbar--cart-wrapper,
 .header__annbar--cart-menu {
     display: flex;
     justify-content: center;
