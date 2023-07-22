@@ -203,7 +203,7 @@ p {
 .ham-menu {
     position: absolute;
     z-index: 50;
-    width: 38%;
+    max-width: 750px;
     background-color: var(--papaya-orange);
     padding: 3rem 2.5rem;
 }
