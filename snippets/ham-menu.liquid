@@ -6,7 +6,12 @@
     <div class="ham-menu__menu-links">
       <!-- Main menu inside ham-menu -->
       {% for link in linklists.main-menu.links -%}
-        {{ link.title | link_to: link.url }}
+        <div class="ham-menu__menu-links--every-link">
+          {{ link.title | link_to: link.url }}
+          <div class="ham-menu__menu-links--chevron-down">
+            {% render 'icon-chevron-down' %}
+          </div>
+        </div>
       {%- endfor %}
     </div>
     <div class="ham-menu__footer-links">

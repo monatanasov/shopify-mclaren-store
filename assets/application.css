@@ -248,6 +248,11 @@ p {
     -webkit-text-stroke: 2px black;
 }
 
+.ham-menu__menu-links--every-link {
+    display: flex;
+    justify-content: space-between;
+}
+
 .ham-menu__footer-links {
     display: flex;
     flex-direction: column;
