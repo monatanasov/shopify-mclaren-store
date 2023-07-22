@@ -1,0 +1,34 @@
+<div class="opacity-black-bg" x-show="loginMenuOpen">
+  <div class="login-menu" x-on:click="loginMenuOpen = false">
+    <div class="login-menu__header">
+      {% render 'mclaren-logo' %}
+      <p class="login-menu__header--xclose">X CLOSE</p>
+    </div>
+    <div class="login-menu__content">
+      <p class="login-menu__content--title">Don't forget to check the box to join McLaren Plus and ensure you receive 10% off McLaren Store purchases.</p>
+      <form action="TODO" class="login-menu__content-form">
+        <label for="email_address" hidden>Email address</label>
+        <input
+          type="email"
+          name="customer[email]"
+          id="email_address"
+          class="login-menu__content-form--email">
+        <label for="password" hidden>Password</label>
+        <input
+          type="password"
+          name="customer[password]"
+          id="password"
+          class="login-menu__content-form--pwd">
+        <input
+          type="submit"
+          value="LOGIN"
+          class="login-menu__content-form--submit btn--primary btn--orange">
+      </form>
+    </div>
+    <div class="login-menu__footer">
+      <a href="#">Forgotten password?</a>
+      <h3>Don't have an account yet?</h3>
+      <a href="#">Register now</a>
+    </div>
+  </div>
+</div>

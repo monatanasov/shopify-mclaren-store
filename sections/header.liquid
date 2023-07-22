@@ -1,4 +1,4 @@
-<div class="header" x-data="{ hamMenuOpen: false }">
+<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false }">
   <!-- rendering hamburger menu when opened -->
   {% render 'ham-menu' %}
 
@@ -15,10 +15,15 @@
           {% render 'flag-menu' %}
         </div>
       </div>
-      <div class="header__annbar--login">
+
+
+      <div class="header__annbar--login" x-on:click="loginMenuOpen =! loginMenuOpen">
         {% render 'icon-login' %}
         <p class="header__annbar--login-btn">LOGIN</p>
+        {% render 'login-menu' %}
       </div>
+
+
       <div x-data="{ cartMenuOpen: false }">
         <div class="header__annbar--cart-menu" x-on:click="cartMenuOpen = true">
           <div class="header__annbar--cart">
