@@ -1,4 +1,4 @@
-<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false }">
+<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false, cartMenuOpen: false }">
   <!-- rendering hamburger menu when opened -->
   {% render 'ham-menu' %}
 
@@ -15,7 +15,7 @@
           {% render 'flag-menu' %}
         </div>
       </div>
-
+      <!-- LOGIN MENU -->
       <div class="header-annbar__login-wrapper">
         <button class="header-annbar__login-btn" x-on:click="loginMenuOpen = true">
           {% render 'icon-login' %}
@@ -23,17 +23,12 @@
         </button>
         {% render 'login-menu' %}
       </div>
-
-
-      <div x-data="{ cartMenuOpen: false }">
-        <div class="header__annbar--cart-menu" x-on:click="cartMenuOpen = true">
-          <div class="header__annbar--cart">
-            {% render 'icon-cart' %}
-          </div>
-          <div class="header__annbar--cart-count">
-            <span>0</span>
-          </div>
-        </div>
+      <!-- CART MENU -->
+      <div class="header-annbar__cart-wrapper">
+        <button class="header-annbar__cart-btn" x-on:click="cartMenuOpen = true">
+          {% render 'icon-cart' %}
+          <span class="header-annbar__cart-count">0</span>
+        </button>
         {% render 'cart-menu' %}
       </div>
     </div>

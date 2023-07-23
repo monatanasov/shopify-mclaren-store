@@ -98,13 +98,8 @@ p {
     font-weight: 700;
 }
 
-.header__annbar--cart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-annbar__login-btn {
+.header-annbar__login-btn,
+.header-annbar__cart-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,15 +111,6 @@ p {
     font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: normal;
-}
-
-.header__annbar--cart-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    cursor: pointer;
-    color: var(--clr-white);
 }
                                                                                         /* header flag menu section  */
 .header__annbar--flag {

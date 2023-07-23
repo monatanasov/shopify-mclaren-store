@@ -1,4 +1,5 @@
-<div class="opacity-black-bg" x-show="cartMenuOpen">
+<div class="cart-menu--wrapper" x-show="cartMenuOpen">
+  <div class="bg-blk-opacity-05" x-on:click="cartMenuOpen = false"></div>
   <div class="cart-menu">
     <div class="cart-menu__header">
       <h2>BASKET</h2>
@@ -11,16 +12,13 @@
         <span>0</span>
       </p>
     </div>
-
     <div class="cart-menu__content">
       <p>Your cart is currently empty.</p>
       <p>Start shopping</p>
     </div>
-
     <div class="cart-menu__footer">
       <p class="cart-menu__footer-title">JOIN MCLAREN PLUS FOR FREE. GET 10% OFF YOUR ORDERS</p>
       <button class="cart-menu__footer-btn">JOIN NOW</button>
     </div>
-
   </div>
 </div>
