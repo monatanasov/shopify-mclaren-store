@@ -79,11 +79,9 @@ p {
     margin: 0;
 }
 
-
-
                                                                                         /* header announcement bar section  */
 
-.header__annbar {
+.header-annbar {
     background-color: var(--papaya-orange);
     color: var(--clr-white);
     display: grid;
@@ -92,7 +90,7 @@ p {
     font-size: 14px;
 }
 
-.header__annbar--middle-col {
+.header-annbar__middle-col {
     grid-column: 2 / 2;
     display: flex;
     align-items: center;
@@ -100,12 +98,12 @@ p {
     text-transform: uppercase;
 }
 
-.header__annbar > .header__annbar--middle-col p,
+.header-annbar > .header-annbar__middle-col p,
 .header__annbar--login-btn {
     color: #ffffff;
 }
 
-.header__annbar--right-col {
+.header-annbar__right-col {
     grid-column: 3 / 3;
     display: flex;
     gap: 1rem;
