@@ -16,10 +16,11 @@
         </div>
       </div>
 
-
-      <div class="header__annbar--login" x-on:click="loginMenuOpen =! loginMenuOpen">
-        {% render 'icon-login' %}
-        <p class="header__annbar--login-btn">LOGIN</p>
+      <div class="header-annbar__login-wrapper">
+        <button class="header-annbar__login-btn" x-on:click="loginMenuOpen = true">
+          {% render 'icon-login' %}
+          login
+        </button>
         {% render 'login-menu' %}
       </div>
 

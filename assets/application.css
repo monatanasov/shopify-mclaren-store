@@ -52,6 +52,18 @@ p {
     opacity: 0.5;
 }
 
+.bg-blk-opacity-05 {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 30;
+}
+
                                                                                         /* header announcement bar section  */
 
 .header__annbar {
@@ -92,7 +104,20 @@ p {
     align-items: center;
 }
 
-.header__annbar--login,
+.header-annbar__login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    color: var(--clr-white);
+    background-color: transparent;
+    border: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
 .header__annbar--cart-menu {
     display: flex;
     justify-content: center;
@@ -356,7 +381,7 @@ p {
     margin-bottom: 2.25rem;
 }
 
-.login-menu__header-xclose {
+.login-menu__header--xclose {
     font-weight: normal;
     cursor: pointer;
 }
