@@ -1,6 +1,7 @@
-<div class="opacity-black-bg" x-show="hamMenuOpen">
+<div class="ham-menu--wrapper" x-show="hamMenuOpen">
+  <div class="bg-blk-opacity-05" x-on:click="hamMenuOpen = false"></div>
   <div class="ham-menu">
-    <div class="ham-menu__close-ham-icon" x-on:click="hamMenuOpen = false">
+    <div class="ham-menu__icon-close" x-on:click="hamMenuOpen = false">
       {% render 'icon-ham-menu-close' %}
     </div>
     <div class="ham-menu__menu-links">

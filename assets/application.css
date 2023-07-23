@@ -79,6 +79,14 @@ p {
     margin: 0;
 }
 
+.ham-menu--wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
                                                                                         /* header announcement bar section  */
 
 .header-annbar {
@@ -251,7 +259,7 @@ p {
     padding: 3rem 2.5rem;
 }
 
-.ham-menu__close-ham-icon {
+.ham-menu__icon-close {
     cursor: pointer;
     width: 2rem;
     height: 2rem;
