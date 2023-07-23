@@ -40,7 +40,9 @@
       <div class="header-menu__main-menu_links">
         <!-- Main menu -->
         {% for link in linklists.main-menu.links -%}
-          {{ link.title | link_to: link.url }}
+          <div class="header-menu__main-menu_link">
+            {{ link.title | link_to: link.url }}
+          </div>
         {%- endfor %}
       </div>
     </div>

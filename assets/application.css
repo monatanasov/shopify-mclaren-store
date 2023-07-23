@@ -217,18 +217,29 @@ p {
 }
 
 .header-menu__main-menu_links {
+    position: relative;
     display: flex;
-    gap: 2rem;
 }
 
-.header-menu__main-menu_links a {
+/* using hidden borders to achieve showing only bottom border on hover
+without moving the text up. Couldn't do it with additional div element,
+cause it doesn't show when hovering on Anchor tag from main menu loop */
+.header-menu__main-menu_link a {
     color: var(--clr-white);
     text-decoration: none;
-    border-bottom: 2px solid transparent;
+    height: 95.46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
 }
 
 .header-menu__main-menu_links a:hover {
-    border-bottom: 2px solid var(--papaya-orange);
+    border-bottom: 6px solid var(--papaya-orange);
+    transition: border 0.3s ease-in-out;
 }
 
 .header-menu__logo {
