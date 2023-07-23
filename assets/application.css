@@ -20,6 +20,14 @@
     background-color: var(--papaya-orange);
 }
 
+.btn--x-close {
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
@@ -299,12 +307,6 @@ p {
     margin-bottom: 2rem;
 }
 
-.cart-menu__header-xclose {
-    font-size: 1rem;
-    font-weight: normal;
-    cursor: pointer;
-}
-
 .cart-menu__total-items {
     font-size: 1.25rem;
     margin-bottom: 1rem;
@@ -365,11 +367,6 @@ p {
     padding-bottom: 1.25rem;
     border-bottom: 2px solid var(--clr-black);
     margin-bottom: 2.25rem;
-}
-
-.login-menu__header--xclose {
-    font-weight: normal;
-    cursor: pointer;
 }
 
 .login-menu__content--title {
