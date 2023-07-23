@@ -1,12 +1,11 @@
-<div class="flag-menu" x-show="flagMenuOpen">
-  <div class="opacity-black-bg">
+<div class="flag-menu--wrapper" x-show="flagMenuOpen">
+  <div class="bg-blk-opacity-05" x-on:click="flagMenuOpen = false"></div>
+  <div class="flag-menu">
     <div class="flag-menu__box">
       <div class="flag-menu__box-icon-close" x-on:click="flagMenuOpen = false">
         {% render 'icon-ham-menu-close' %}
       </div>
-      <div class="flag-menu__box-title">
-        <h2>NOW SHIPPING WORLDWIDE</h2>
-      </div>
+      <h2 class="flag-menu__box-title">NOW SHIPPING WORLDWIDE</h2>
       <div class="flag-menu__box-content">
         <p>Change your shipping country</p>
         <select name="country" id="">
@@ -259,7 +258,7 @@
           <option value="ZW">Zimbabwe</option>
           <option value="AX">Åland Islands</option>
         </select>
-        <button type="button" class="btn-primary btn--orange">Save</button>
+        <button type="button" class="btn--primary btn--orange">Save</button>
       </div>
     </div>
   </div>

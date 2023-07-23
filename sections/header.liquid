@@ -1,4 +1,4 @@
-<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false, cartMenuOpen: false }">
+<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false, cartMenuOpen: false, flagMenuOpen: false }">
   <!-- rendering hamburger menu when opened -->
   {% render 'ham-menu' %}
 
@@ -7,14 +7,16 @@
       <p>🚚 free delivery over $90</p>
     </div>
     <div class="header__annbar--right-col">
-      <div class="header__annbar--flag-wrapper" x-data="{ flagMenuOpen: false }">
-        <div class="header__annbar--flag" x-on:click="flagMenuOpen = true">
+
+      <!-- flag MENU -->
+      <div class="header-annbar__flag-wrapper">
+        <button class="header-annbar__flag-btn" x-on:click="flagMenuOpen = true">
           {% render 'icon-flag-uk' %}
-        </div>
-        <div class="header__annbar--flag-menu">
-          {% render 'flag-menu' %}
-        </div>
+        </button>
+        {% render 'flag-menu' %}
       </div>
+
+
       <!-- LOGIN MENU -->
       <div class="header-annbar__login-wrapper">
         <button class="header-annbar__login-btn" x-on:click="loginMenuOpen = true">

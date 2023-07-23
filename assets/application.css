@@ -72,6 +72,15 @@ p {
     z-index: 30;
 }
 
+.header-annbar__flag-btn,
+.header-annbar__login-btn,
+.header-annbar__cart-btn {
+    padding: 0;
+    margin: 0;
+}
+
+
+
                                                                                         /* header announcement bar section  */
 
 .header__annbar {
@@ -121,8 +130,13 @@ p {
     font-weight: normal;
 }
                                                                                         /* header flag menu section  */
-.header__annbar--flag {
+.header-annbar__flag-wrapper{
+    display: flex;
+}
+
+.header-annbar__flag-btn {
     cursor: pointer;
+    border: none;
 }
 
 .flag-menu__box {
@@ -147,7 +161,7 @@ p {
     cursor: pointer;
 }
 
-.flag-menu__box-title h2 {
+.flag-menu__box-title {
     display: flex;
     text-align: center;
     align-items: center;
