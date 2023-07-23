@@ -189,18 +189,18 @@ p {
 
                                                                                         /* header menu section  */
 
-.header__menu {
+.header-menu {
     background-color: var(--clr-black);
     display: flex;
     justify-content: space-between;
 }
 
-.header__menu--main-menu {
+.header-menu__main-menu {
     display: flex;
     align-items: center;
 }
 
-.header__menu-ham {
+.header-menu__main-menu_icon-ham {
     cursor: pointer;
     margin-left: 1rem;
     display: flex;
@@ -216,22 +216,22 @@ p {
     --button-color: var(--papaya-orange);
 }
 
-.header__menu--menu-links {
+.header-menu__main-menu_links {
     display: flex;
     gap: 2rem;
 }
 
-.header__menu--menu-links a {
+.header-menu__main-menu_links a {
     color: var(--clr-white);
     text-decoration: none;
     border-bottom: 2px solid transparent;
 }
 
-.header__menu--menu-links a:hover {
+.header-menu__main-menu_links a:hover {
     border-bottom: 2px solid var(--papaya-orange);
 }
 
-.header__menu-logo {
+.header-menu__logo {
     background-color: var(--clr-white);
     padding: 2rem 1rem 2rem 11rem;
     clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);

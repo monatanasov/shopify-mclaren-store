@@ -32,19 +32,19 @@
     </div>
   </div>
 
-  <div class="header__menu">
-    <div class="header__menu--main-menu">
-      <div class="header__menu-ham" x-on:click="hamMenuOpen = true">
+  <div class="header-menu">
+    <div class="header-menu__main-menu">
+      <div class="header-menu__main-menu_icon-ham" x-on:click="hamMenuOpen = true">
         {% render 'icon-ham-menu-open' %}
       </div>
-      <div class="header__menu--menu-links">
+      <div class="header-menu__main-menu_links">
         <!-- Main menu -->
         {% for link in linklists.main-menu.links -%}
           {{ link.title | link_to: link.url }}
         {%- endfor %}
       </div>
     </div>
-    <div class="header__menu-logo">
+    <div class="header-menu__logo">
       {% render 'mclaren-logo' %}
     </div>
   </div>
