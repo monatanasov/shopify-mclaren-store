@@ -1,4 +1,4 @@
-<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false, cartMenuOpen: false, flagMenuOpen: false }">
+<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false, cartMenuOpen: false, flagMenuOpen: false, searchBtnHidden: true }">
   <!-- HAM menu -->
   {% render 'ham-menu' %}
   <div class="header-annbar">
@@ -44,6 +44,13 @@
             {{ link.title | link_to: link.url }}
           </div>
         {%- endfor %}
+        <button
+          class="header-menu__main-menu_search"
+          x-show="searchBtnHidden"
+          x-on:click="searchBtnHidden = false">
+          <span class="header-menu__main-menu_search-title" href="#">SEARCH</span>
+          {% render 'icon-search' %}
+        </button>
       </div>
     </div>
     <div class="header-menu__logo">
