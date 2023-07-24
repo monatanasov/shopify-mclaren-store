@@ -1,4 +1,4 @@
-<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false, cartMenuOpen: false, flagMenuOpen: false, searchBtnHidden: true }">
+<div class="header" x-data="{ hamMenuOpen: false, loginMenuOpen: false, cartMenuOpen: false, flagMenuOpen: false, searchBtnShow: true, searchFormShow: false }">
   <!-- HAM menu -->
   {% render 'ham-menu' %}
   <div class="header-annbar">
@@ -44,13 +44,24 @@
             {{ link.title | link_to: link.url }}
           </div>
         {%- endfor %}
-        <button
-          class="header-menu__main-menu_search"
-          x-show="searchBtnHidden"
-          x-on:click="searchBtnHidden = false">
-          <span class="header-menu__main-menu_search-title" href="#">SEARCH</span>
-          {% render 'icon-search' %}
-        </button>
+        <div class="header-menu__main-menu_search">
+          <button class="header-menu__main-menu_search-btn" x-on:click="searchBtnShow = false, searchFormShow = true">
+            <span class="header-menu__main-menu_search-title" x-show="searchBtnShow">SEARCH</span>
+            {% render 'icon-search' %}
+          </button>
+        </div>
+        <!-- TODO fill form action and method-->
+        <form
+          x-show="searchFormShow"
+          action="#"
+          method="#"
+          class="header-menu__main-menu_search-form">
+          <label for="search-products"></label>
+          <input
+            class="header-menu__main-menu_search-form-input"
+            type="text"
+            id="search-products">
+        </form>
       </div>
     </div>
     <div class="header-menu__logo">

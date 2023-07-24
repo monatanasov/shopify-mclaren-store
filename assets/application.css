@@ -223,6 +223,8 @@ p {
 .header-menu__main-menu_links {
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* using hidden borders to achieve showing only bottom border on hover
@@ -250,6 +252,12 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header-menu__main-menu_search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -266,6 +274,16 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     justify-content: center;
     padding-left: 1rem;
     padding-right: .5rem;
+}
+
+.header-menu__main-menu_search-form-input {
+    width: 170px;
+    margin-left: .5rem;
+    outline: 0;
+    color: var(--clr-white);
+    background-color: transparent;
+    border-width: 0 0 1px;
+    border-color: var(--clr-white);
 }
 
 .header-menu__logo {
