@@ -482,3 +482,23 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     gap: 1rem;
 }
 
+/* mclaren plus CTA section  */
+
+.mclaren-plus-cta {
+    background-color: var(--papaya-orange);
+    width: 100%;
+    padding: 2rem 1.25rem;
+}
+
+.mclaren-plus-cta__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mclaren-plus-cta__content-title {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    font-size: 2rem;
+}
