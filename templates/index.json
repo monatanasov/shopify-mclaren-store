@@ -1,0 +1,11 @@
+{
+    "sections": {
+        "homepage": {
+            "type": "homepage",
+            "settings": {
+                "homepage": "all"
+            }
+        }
+    },
+    "order": ["homepage"]
+}
