@@ -28,6 +28,18 @@
     font-weight: normal;
 }
 
+.join-now-btn--blk-white {
+    padding: .75rem;
+    min-width: 10rem;
+    border: none;
+    background-color: var(--clr-white);
+}
+
+.join-now-btn--blk-white:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
@@ -396,7 +408,7 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     padding: 0.625rem;
 }
 
-.cart-menu__footer-btn {
+/* .cart-menu__footer-btn {
     padding: .75rem;
     min-width: 10rem;
     background-color: var(--clr-white);
@@ -406,7 +418,7 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
 .cart-menu__footer-btn:hover {
     color: var(--clr-white);
     background-color: var(--clr-black);
-}
+} */
 
                                                                                         /* login menu section  */
 
