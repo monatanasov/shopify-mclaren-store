@@ -5,6 +5,7 @@
     --papaya-orange-hover: #aa6f1d;
     --clr-white: #ffffff;
     --clr-black: black;
+    --clr-footer-grey: #adadad;
 }
 
 .btn--primary {
@@ -474,7 +475,7 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     gap: 1rem;
 }
 
-/* mclaren plus CTA section  */
+                                                                                        /* mclaren plus CTA section  */
 
 .mclaren-plus-cta {
     background-color: var(--papaya-orange);
@@ -494,4 +495,117 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     background-color: var(--clr-black);
     color: var(--clr-white);
     font-size: 2rem;
+}
+
+                                                                                        /* FOOTER section  */
+
+.footer {
+    padding: 1.85rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-nav-top,
+.footer-nav-middle,
+.footer-nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav-top-ul,
+.footer-nav-middle-ul,
+.footer-nav-bottom-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav-bottom-ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 16px;
+}
+
+.footer-nav-top__li-link {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-left: 2px solid var(--papaya-orange);
+}
+
+.footer-nav-top__li-link:first-of-type {
+    border-left: none;
+}
+
+.footer-nav-middle__li-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer-nav-bottom__li-link:first-of-type {
+    padding-left: 2rem;
+}
+
+.footer-nav-bottom__li-link:last-of-type {
+    padding-right: 2rem;
+}
+
+.footer-nav-top__li-link a,
+.footer-nav-middle__li-link a,
+.footer-nav-bottom-ul a {
+    text-decoration: none;
+    color: var(--clr-footer-grey);
+    font-family: 'Noto Sans',sans-serif;
+    font-weight: normal;
+}
+
+.footer-nav-top__li-link a {
+    font-size: 22px;
+}
+
+.footer-nav-middle__li-link a {
+    font-size: 18px;
+}
+
+.footer-nav-top__li-link a:hover,
+.footer-nav-middle__li-link a:hover,
+.footer-nav-bottom__li-link a:hover {
+    color: var(--clr-black);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom__social {
+    display: flex;
+    gap: 1.75rem;
+    padding: 0rem 2rem;
+    border-right: 2px solid var(--papaya-orange);
+    cursor: pointer;
+}
+
+.footer-bottom__social-fb,
+.footer-bottom__social-twi,
+.footer-bottom__social-ins,
+.footer-bottom__social-you {
+    fill: var(--clr-footer-grey);
+}
+
+.footer-bottom__social-fb:hover,
+.footer-bottom__social-twi:hover,
+.footer-bottom__social-ins:hover,
+.footer-bottom__social-you:hover {
+    fill: var(--clr-black);
+}
+
+.footer-bottom__payment {
+    display: flex;
+    gap: 1.75rem;
+    padding: 0rem 2rem;
+    border-right: 2px solid var(--papaya-orange);
 }
