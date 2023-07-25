@@ -33,6 +33,7 @@
     min-width: 10rem;
     border: none;
     background-color: var(--clr-white);
+    cursor: pointer;
 }
 
 .join-now-btn--blk-white:hover {
