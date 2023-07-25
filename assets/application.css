@@ -388,18 +388,39 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     margin-bottom: 1rem;
 }
 
+.cart-menu__content {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 .cart-menu__footer {
     margin-top: 1.25rem;
-    padding: 0.625rem;
+    /* padding: 0.625rem;
     gap: 0.625rem;
     background-color: var(--papaya-orange);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
-.cart-menu__footer-title {
+.cart-menu__footer .mclaren-plus-cta {
+    padding: .75rem;
+    text-align: center;
+}
+
+.cart-menu__footer .mclaren-plus-cta__content {
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.cart-menu__footer .mclaren-plus-cta__content-title {
+    font-size: 1.25rem;
+    padding: .75rem;
+    line-height: 1;
+}
+
+/* .cart-menu__footer-title {
     color: var(--clr-white);
     background-color: var(--clr-black);
     font-family: 'Space Grotesk', sans-serif;
@@ -407,7 +428,7 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     font-weight: 700;
     text-align: center;
     padding: 0.625rem;
-}
+} */
 
 /* .cart-menu__footer-btn {
     padding: .75rem;
@@ -496,6 +517,7 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    font-family: 'Noto Sans',sans-serif;
 }
 
 .mclaren-plus-cta__content-title {
