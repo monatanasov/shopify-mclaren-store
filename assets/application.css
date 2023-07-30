@@ -609,3 +609,67 @@ cause it doesn't show when hovering on Anchor tag from main menu loop */
     padding: 0rem 2rem;
     border-right: 2px solid var(--papaya-orange);
 }
+
+                                                                                        /* FOOTER section  */
+
+.homepage-carousel {
+    position: relative;
+}
+
+.carousel__image {
+    /* position: absolute;
+    z-index: 10;
+    object-fit: cover; */
+}
+
+.homepage-carousel__left,
+.homepage-carousel__middle {
+    position: relative;
+}
+
+.left-carousel__content {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 0;
+    transform: translate(-0%, -50%);
+    padding-left: 2rem;
+}
+
+.middle-carousel__content {
+    position: absolute;
+    z-index: 15;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel__title {
+    color: var(--clr-white);
+    font-size: 70px;
+}
+
+.btn--carousel {
+    padding: 1rem 2.25rem;
+}
+
+.carousel__btn--switch {
+    display: flex;
+    gap: .5rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn--switch {
+    width: 1.5rem;
+    height: .25rem;
+    background-color: var(--clr-white);
+    border: none;
+    cursor: pointer;
+}
+
+.btn--switch:hover {
+    background-color: var(--papaya-orange);
+}
